@@ -27,7 +27,7 @@ Versions of libraries used-
 3)	Outlier removal - Removed outliers from credit score, loan to debt ratio, loan to value, unpaid principal, interest rate. 
 4)	Oversampling – The loan default data was highly imbalanced i.e only about 0.5% data points had label 1. The minority class was oversampled using SMOTE (Synthetic Minority Oversampling Technique).
 
-##Feature Engineering and feature selection:
+## Feature Engineering and feature selection:
 
 1)	A new feature was created by taking difference of origination date and first payment date.
 2)	 Features like insurance type, insurance percent, source _Z (that were created after get_dummies )  and financial institutions were dropped as they had very low correlation with the m13 label. When the model was trained without dropping these features it reduced the f1 score.
