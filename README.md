@@ -18,7 +18,7 @@ Versions of libraries used-
 9)	Dateutils	: 2.8.0
 
 ## Approach-
-   Since the data was extremely imbalanced, it was difficult for the model to learn and make prediction for the minority class. Therefore, I used SMOTE to artificially increase the instances of minority class and make it equal to the majority class. This oversampled data was used to further train models. The trained model was then again tested on the imbalanced test dataset to check the performance.
+   Since the data was extremely imbalanced, it was difficult for the model to learn and make prediction for the minority class. Therefore, I used SMOTE to artificially increase the instances of minority class and make it equal to the majority class. This oversampled data was used to further train models. The trained model was then again tested on the imbalanced validation dataset to check the performance.
 
 ## Data preprocessing:
 
@@ -41,4 +41,4 @@ The final model is voting classifier of four models:
 3)	Bagging classifier of Xgboost
 4)	Bagging Classifier of Catboost.
 
-I started experimenting with different models, out of which the individual random forest, xgboost and catboost were performing well on the validation set. Each model’s parameters were extensively tuned using gridsearchcv.  The final model was ensemble of all the good performing models to make predictions more robust. 
+I started experimenting with different models, out of which the individual random forest, xgboost and catboost were performing well on the validation set. Each model’s parameters were extensively tuned using gridsearchcv.  The final model was ensemble of all the good performing models to make the predictions more robust. 
