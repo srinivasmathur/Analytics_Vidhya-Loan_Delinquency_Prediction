@@ -30,7 +30,7 @@ Versions of libraries used-
 ## Feature Engineering and feature selection:
 
 1)	A new feature was created by taking difference of origination date and first payment date.
-2)	 Features like insurance type, insurance percent, source _Z (that were created after get_dummies )  and financial institutions were dropped as they had very low correlation with the m13 label. When the model was trained without dropping these features it reduced the f1 score.
+2)	 Features like insurance type, insurance percent, source _Z (that were created after get_dummies )  and financial institutions were dropped as they had very low correlation with the m13 label. When the model was trained while keeping these features it reduced the f1 score.
 3)	All other features were kept as they had significant correlation with the m13 label.
 
 ## Final Model:
