@@ -18,7 +18,7 @@ Versions of libraries used-
 9)	Dateutils	: 2.8.0
 
 ## Approach-
-   Since the data was extremely imbalanced, it was difficult for the model to learn and make prediction for the minority class. Therefore, I used SMOTE to artificially increase the instances of minority class and make it equal to the majority class. This oversampled data was used to train models.
+   Since the data was extremely imbalanced, it was difficult for the model to learn and make prediction for the minority class. Therefore, I used SMOTE to artificially increase the instances of minority class and make it equal to the majority class. This oversampled data was used to further train models. The trained model was then again tested on the imbalanced test dataset to check the performance.
 
 ## Data preprocessing:
 
